@@ -456,6 +456,16 @@ MonoBehaviour:
     m_SingletonActionBindings: []
     m_Flags: 0
   isPressedJump: 0
+  Sprint:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  isPressedSprint: 0
   MouseX:
     m_Name: Mouse X
     m_Type: 0
@@ -465,10 +475,6 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
-  mouseX: 0
-  rotationX: 0
-  sensitivityX: 6
-  clampX: 85
   MouseY:
     m_Name: Mouse Y
     m_Type: 0
@@ -478,10 +484,18 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  mouseX: 0
+  rotationX: 0
+  sensitivityX: 6
+  clampX: 85
   mouseY: 0
   rotationY: 0
   sensitivityY: 0.5
+  movementSpeed: 0
   walkSpeed: 27.5
+  walkFOV: 75
+  sprintSpeed: 40
+  sprintFOV: 85
   jumpVelocity: 40
   gravityAcceleration: -3
   maxGravitySpeed: 20

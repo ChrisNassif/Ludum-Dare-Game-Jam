@@ -69,31 +69,13 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ActivateGravityGun",
+                    "name": "Sprint",
                     "type": "Button",
-                    "id": "76c533a2-7920-44d6-8216-4cb1916d6723",
+                    "id": "9a325e73-b6e1-4a5a-8030-b71128360984",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "DischargeGravityGun",
-                    "type": "Button",
-                    "id": "c3543ab4-31be-4003-9928-2a5e5d2b7bde",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "PushWithGravityGun",
-                    "type": "Value",
-                    "id": "225d9b4e-2a30-4851-a5ef-19a4badce9e0",
-                    "expectedControlType": "Axis",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -176,34 +158,12 @@
                 },
                 {
                     "name": "",
-                    "id": "355fae2b-65a9-4e7c-8536-6e49351bfcea",
-                    "path": "<Mouse>/leftButton",
+                    "id": "83e5edab-93aa-4a65-9f01-3750fa7b211e",
+                    "path": "<Keyboard>/shift",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ActivateGravityGun",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "bce76e73-6acf-4a4e-9ebb-efdc1af8b2da",
-                    "path": "<Mouse>/rightButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "DischargeGravityGun",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f2067c52-3390-4dd2-9636-00e2f8c3fd4c",
-                    "path": "<Mouse>/scroll/y",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PushWithGravityGun",
+                    "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
