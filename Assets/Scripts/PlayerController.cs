@@ -46,6 +46,8 @@ public class PlayerController : MonoBehaviour {
     public float dY = 0;
     public float dZ = 0;
 
+    public bool GODMODE = false;
+
     //states
     public enum States {
         Standing,
@@ -201,10 +203,10 @@ public class PlayerController : MonoBehaviour {
         dX = 0;
         dZ = 0;
 
-        if (isGrounded()) {         
+        if (isGrounded() && !GODMODE) {         
             dY = gravityAcceleration; //weird bug
         }
-        else {
+        else if (!GODMODE){
             if (gravityAcceleration < -1 * maxGravitySpeed)
                 dY += -1 * maxGravitySpeed;
             else
@@ -228,7 +230,7 @@ public class PlayerController : MonoBehaviour {
         //
         //translation
         //
-
+        
         if (isPressedForward && canChangeState(States.CanTranslate)) {
             dX += (transform.forward * movementSpeed).x;
             dZ += (transform.forward * movementSpeed).z;
@@ -245,6 +247,14 @@ public class PlayerController : MonoBehaviour {
             dX += -1 * (transform.right * movementSpeed).x;
             dZ += -1 * (transform.right * movementSpeed).z;
         }
+        if (isPressedJump && GODMODE) {
+            dY = 1 * (transform.up * movementSpeed).y / 2;
+        }
+        else if (isPressedSprint && GODMODE) {
+            dY = -1 * (transform.up * movementSpeed).y / 2;
+        }
+        else if (GODMODE)
+            dY = 0;
 
 
         //
